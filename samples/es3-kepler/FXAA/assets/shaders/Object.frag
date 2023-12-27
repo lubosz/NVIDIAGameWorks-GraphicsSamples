@@ -31,11 +31,13 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 //----------------------------------------------------------------------------------
-#version 420
+#version 460 core
 precision highp float;
 uniform vec4 color;
-varying float diffuse;
+in float diffuse;
+out vec4 fragColor;
+
 void main(void)
 {
-    gl_FragColor = color*diffuse;
+    fragColor = color*diffuse;
 }

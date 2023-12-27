@@ -1,3 +1,4 @@
+#version 460 core
 //----------------------------------------------------------------------------------
 // File:        es3-kepler\FXAA\assets\shaders/FXAA.vert
 // SDK Version: v3.00
@@ -31,10 +32,10 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 //----------------------------------------------------------------------------------
-attribute vec2 aPosition;
-attribute vec2 aTexCoord;
+in vec2 aPosition;
+in vec2 aTexCoord;
 
-varying vec2 vTexCoord;
+out vec2 vTexCoord;
 
 void main(void)
 {

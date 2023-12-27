@@ -1,4 +1,4 @@
-#version 420
+#version 460 core
 #define FXAA_PC 1
 #define FXAA_GLSL_130 1
 #define FXAA_QUALITY__PRESET 12
@@ -1035,11 +1035,12 @@ precision highp float;
 
 uniform sampler2D uSourceTex;
 uniform vec2 RCPFrame;
-varying vec2 vTexCoord;
+in vec2 vTexCoord;
+out vec4 fragColor;
 
 void main(void)
 {
-    gl_FragColor = FxaaPixelShader(vTexCoord,
+    fragColor = FxaaPixelShader(vTexCoord,
 				FxaaFloat4(0.0f, 0.0f, 0.0f, 0.0f),		// FxaaFloat4 fxaaConsolePosPos,
         uSourceTex,							// FxaaTex tex,
         uSourceTex,							// FxaaTex fxaaConsole360TexExpBiasNegOne,

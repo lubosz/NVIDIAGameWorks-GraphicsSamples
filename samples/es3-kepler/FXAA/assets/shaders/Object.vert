@@ -31,13 +31,13 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 //----------------------------------------------------------------------------------
-#version 420
+#version 460 core
 precision highp float;
-attribute vec4 aPosition;
-attribute vec3 aNormal;
-attribute vec2 aUV;
+in vec4 aPosition;
+in vec3 aNormal;
+in vec2 aUV;
 uniform mat4 mvp;
-varying float diffuse;
+out float diffuse;
 vec3 lightDirection = vec3(1.0, 1.0, 1.0);
 
 void main(void)
