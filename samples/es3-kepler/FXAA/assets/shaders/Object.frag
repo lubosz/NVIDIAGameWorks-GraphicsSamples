@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------
 // File:        es3-kepler\FXAA\assets\shaders/Object.frag
-// SDK Version: v3.00 
+// SDK Version: v3.00
 // Email:       gameworks@nvidia.com
 // Site:        http://developer.nvidia.com/
 //

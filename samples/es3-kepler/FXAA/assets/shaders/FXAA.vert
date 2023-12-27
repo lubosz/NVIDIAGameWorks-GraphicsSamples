@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------
 // File:        es3-kepler\FXAA\assets\shaders/FXAA.vert
-// SDK Version: v3.00 
+// SDK Version: v3.00
 // Email:       gameworks@nvidia.com
 // Site:        http://developer.nvidia.com/
 //
@@ -38,6 +38,6 @@ varying vec2 vTexCoord;
 
 void main(void)
 {
-    vTexCoord = aTexCoord;    
+    vTexCoord = aTexCoord;
       gl_Position = vec4(aPosition.x, aPosition.y, 0.0, 1.0);
 }
