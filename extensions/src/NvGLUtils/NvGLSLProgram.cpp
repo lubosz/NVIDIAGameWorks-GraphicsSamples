@@ -58,6 +58,7 @@ NvGLSLProgram* NvGLSLProgram::createFromFiles(const char* vertFilename, const ch
     if (prog->setSourceFromFiles(vertFilename, fragFilename, strict)) {
         return prog;
     } else {
+        LOGE("Error compiling %s / %s", vertFilename, fragFilename);
         delete prog;
         return NULL;
     }
