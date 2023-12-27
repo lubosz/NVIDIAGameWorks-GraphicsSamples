@@ -45,6 +45,7 @@
 
 #include <cstdlib>
 #include <ctime>
+#include <limits>
 
 #define LIGHT_TEXTURE_SIZE (4096)
 #define LIGHT_TEXUTRE_MIPMAP_LEVELS (11)
